@@ -11,7 +11,7 @@ A central repository containing assignments, implementations, and theoretical co
 This course covers advanced data structures, algorithmic design techniques, and complexity analysis.
 
 | Week | Chapter - Section | Reference Book / Material |
-| :---: | :--- | :--- | :--- |
+| :---: | :--- | :--- |
 | **1** | Binary Trees, AVL Trees and their algorithms | *Algorithms Design and Applications* (Goodrich, Tamassia) |
 | **2** | B-Trees, B+-Trees and their algorithms | - |
 | **3** | Graphs and Traversal Algorithms | - |
@@ -23,7 +23,7 @@ This course covers advanced data structures, algorithmic design techniques, and 
 | **9** | Hashing | Lecture Slides (Hashing) |
 | **10** | Algorithmic Complexity | - |
 | **11** | Red – Black Trees | - |
-| **12** | *Advanced Topics / Wrap-up* | - | - |
+| **12** | *Advanced Topics / Wrap-up* | - |
 
 ## 📖 Core Literature
 1. **Goodrich Michael, Tamassia Roberto.** *Αλγόριθμοι Σχεδίαση και Εφαρμογές*, Μ. Γκιούρδας, 2015.
