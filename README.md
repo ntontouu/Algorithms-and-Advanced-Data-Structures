@@ -10,19 +10,19 @@ A central repository containing assignments, implementations, and theoretical co
 
 This course covers advanced data structures, algorithmic design techniques, and complexity analysis.
 
-| Week | Chapter - Section | Reference Book / Material | Professor |
+| Week | Chapter - Section | Reference Book / Material |
 | :---: | :--- | :--- | :--- |
-| **1** | Binary Trees, AVL Trees and their algorithms | *Algorithms Design and Applications* (Goodrich, Tamassia) | Assoc. Prof. P. Karvelis |
-| **2** | B-Trees, B+-Trees and their algorithms | - | Assoc. Prof. P. Karvelis |
-| **3** | Graphs and Traversal Algorithms | - | Assoc. Prof. P. Karvelis |
-| **4** | Algorithm Analysis - Asymptotic Complexity, Notations | - | Assoc. Prof. P. Karvelis |
-| **5** | Enumeration, Recursion, Greedy Method | *The Algorithm Design Manual* (Skiena) | Prof. C. Gogos |
-| **6** | Divide and Conquer | - | Prof. C. Gogos |
-| **7** | Dynamic Programming | - | Prof. C. Gogos |
-| **8** | Backtracking | - | Prof. C. Gogos |
-| **9** | Hashing | Lecture Slides (Hashing) | Prof. C. Stylios |
-| **10** | Algorithmic Complexity | - | Prof. C. Stylios |
-| **11** | Red – Black Trees | - | Prof. C. Stylios |
+| **1** | Binary Trees, AVL Trees and their algorithms | *Algorithms Design and Applications* (Goodrich, Tamassia) |
+| **2** | B-Trees, B+-Trees and their algorithms | - |
+| **3** | Graphs and Traversal Algorithms | - |
+| **4** | Algorithm Analysis - Asymptotic Complexity, Notations | - |
+| **5** | Enumeration, Recursion, Greedy Method | *The Algorithm Design Manual* (Skiena) |
+| **6** | Divide and Conquer | - |
+| **7** | Dynamic Programming | - |
+| **8** | Backtracking | - |
+| **9** | Hashing | Lecture Slides (Hashing) |
+| **10** | Algorithmic Complexity | - |
+| **11** | Red – Black Trees | - |
 | **12** | *Advanced Topics / Wrap-up* | - | - |
 
 ## 📖 Core Literature
@@ -31,8 +31,8 @@ This course covers advanced data structures, algorithmic design techniques, and 
 
 ## 📝 Author & Academic Use
 
-**Student:** Maria Alexandra Ndontou (ΜΑΡΙΑ ΑΛΕΞΑΝΔΡΑ ΝΤΟΝΤΟΥ)  
-**Student ID:** 2799  
+**Student:** Maria Alexandra Ntontou (ΜΑΡΙΑ ΑΛΕΞΑΝΔΡΑ ΝΤΟΝΤΟΥ)  
+**Student ID:** 263 
 **Institution:** University of Ioannina — Department of Informatics and Telecommunications  
 
 *This repository is maintained for academic reference and educational purposes.*
