@@ -1,6 +1,9 @@
-# Advanced Data Structures & Algorithms
-University • Department of Informatics and Telecommunications • Course Repository
+[![University](https://img.shields.io/badge/University-University%20of%20Ioannina-blue.svg)](https://www.uoi.gr)
+[![Department](https://img.shields.io/badge/Department-Informatics%20%26%20Telecommunications-lightgrey.svg)](https://www.dit.uoi.gr/)
+[![Course](https://img.shields.io/badge/Course-Algorithms%20%26%20Advanced%20Data%20Structures-orange.svg)](https://ecourse.uoi.gr/)
+[![Language](https://img.shields.io/badge/Language-Python-blueviolet.svg)](https://www.python.org/)
 
+# Advanced Data Structures & Algorithms
 A central repository containing assignments, implementations, and theoretical coursework for the Advanced Data Structures and Algorithms course.
 
 ## 📚 Course Syllabus & Weekly Schedule
