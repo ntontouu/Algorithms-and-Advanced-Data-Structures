@@ -1,34 +1,61 @@
 [![University](https://img.shields.io/badge/University-University%20of%20Ioannina-blue.svg)](https://www.uoi.gr)
-[![Department](https://img.shields.io/badge/Department-Informatics%20%26%20Telecommunications-lightgrey.svg)](https://www.dit.uoi.gr/)
-[![Course](https://img.shields.io/badge/Course-Algorithms%20%26%20Advanced%20Data%20Structures-orange.svg)](https://ecourse.uoi.gr/)
+[![Course](https://img.shields.io/badge/Course-Algorithms%20%26%20Adv.%20Data%20Structures-orange.svg)](https://ecourse.uoi.gr/)
+[![Topic](https://img.shields.io/badge/Topic-Probabilistic%20Data%20Structures-success.svg)]()
 [![Language](https://img.shields.io/badge/Language-Python-blueviolet.svg)](https://www.python.org/)
 
-# Advanced Data Structures & Algorithms
-A central repository containing assignments, implementations, and theoretical coursework for the Advanced Data Structures and Algorithms course.
+# Bloom Filters and Bloom Filters with Counters
+A  Python implementation of a standard Bloom Filter and a Counting Bloom Filter. Developed as Assignment 13 for the Algorithms and Data Structures course to demonstrate space/time trade-offs in hash coding.
 
-## 📚 Course Syllabus & Weekly Schedule
+## 📚 Table of Contents
+- [Overview](#-overview)
+- [Theoretical Background](#-theoretical-background)
+- [Project Structure & Code Architecture](#-project-structure--code-architecture)
+- [Experimental Results & Analysis](#-experimental-results--analysis)
+- [Getting Started & Execution](#-getting-started--execution)
+- [Author & Credits](#-author--credits)
 
-This course covers advanced data structures, algorithmic design techniques, and complexity analysis.
+## 🔍 Overview
+This project implements probabilistic data structures designed to test whether an element is a member of a set. It guarantees no false negatives while allowing a highly controllable, extremely small rate of false positives. The project extends the classic architecture by implementing a Counting Bloom Filter, which replaces static bits with counters to support item deletion without corrupting the overall dataset.
 
-| Week | Chapter - Section | Reference Book / Material |
-| :---: | :--- | :--- |
-| **1** | Binary Trees, AVL Trees and their algorithms | *Algorithms Design and Applications* (Goodrich, Tamassia) |
-| **2** | B-Trees, B+-Trees and their algorithms | - |
-| **3** | Graphs and Traversal Algorithms | - |
-| **4** | Algorithm Analysis - Asymptotic Complexity, Notations | - |
-| **5** | Enumeration, Recursion, Greedy Method | *The Algorithm Design Manual* (Skiena) |
-| **6** | Divide and Conquer | - |
-| **7** | Dynamic Programming | - |
-| **8** | Backtracking | - |
-| **9** | Hashing | Lecture Slides (Hashing) |
-| **10** | Algorithmic Complexity | - |
-| **11** | Red – Black Trees | - |
-| **12** | *Advanced Topics / Wrap-up* | - |
+## 📐 Theoretical Background
 
-## 📖 Core Literature
-1. **Goodrich Michael, Tamassia Roberto.** *Αλγόριθμοι Σχεδίαση και Εφαρμογές*, Μ. Γκιούρδας, 2015.
-2. **Skiena, Steven S.** *The Algorithm Design Manual*. Springer, 2020. [Link](https://link.springer.com/book/10.1007/978-3-030-54256-6)
+**Double Hashing & MD5 (Hash Functions)**
+Instead of generating $k$ independent hash functions computationally, the system utilizes Double Hashing. It computes a single 32-character MD5 hash, splits it into two 16-character integers ($h_1$ and $h_2$), and mathematically generates $k$ hash values using the formula:  
+$h_i(x) = (h_1(x) + i \cdot h_2(x)) \pmod m$
 
+**Standard Bloom Filter**
+Utilizes a highly memory-efficient array of bits (initialized to 0). During insertion, $k$ array positions are flipped to 1. Queries check if all $k$ positions are 1.
+
+**Counting Bloom Filter**
+Replaces the binary array with an array of small integers. Insertions increment the corresponding $k$ indices by 1, while deletions safely decrement them, allowing dynamic set modifications.
+
+## 🛠️ Project Structure & Code Architecture
+
+| File | Description |
+| :--- | :--- |
+| `main.py` | Python script containing the `BloomFilter` and `CountingBloomFilter` classes, double hashing logic, and all experimental pipelines. |
+| `Technical_Report.pdf` | Detailed 3-5 page report documenting theoretical design, structural choices, and experimental analysis. |
+| `README.md` | This file, containing execution instructions and project overview. |
+
+## 📊 Experimental Results & Observations
+The structures were rigorously tested against multiple scenarios:
+
+- **Correctness Scenarios:** Successfully validates the insertion of "apple", "banana", and "cherry". The Counting filter correctly drops "apple" upon deletion (returns False) while retaining "banana" (returns True).
+- **False Positive Analysis (10,000 insertions, 1,000 queries):**
+  - **m = 50,000 (k = 3):** Achieves ~9.2% FP rate.
+  - **m = 100,000 (k = 6):** Achieves ~1.2% FP rate.
+  - **m = 200,000 (k = 13):** Achieves ~0.0% FP rate.
+- **Python `set` Comparison:** While native Python `set` objects perform insertions and lookups marginally faster due to underlying C optimizations, the Bloom Filter achieves massive memory efficiency (~12.5 KB compared to >500 KB for 10,000 strings).
+
+## 🚀 Getting Started & Execution
+
+**Prerequisites:** 
+Ensure Python 3.6+ is installed on your environment. No external libraries (like NumPy or Pandas) are required; the code relies entirely on standard libraries (`hashlib`, `random`, `time`, `sys`).
+
+**Execution:**
+```bash
+python main.py 
+```
 ## 📝 Author & Academic Use
 
 **Student:** Maria Alexandra Ntontou (ΜΑΡΙΑ ΑΛΕΞΑΝΔΡΑ ΝΤΟΝΤΟΥ)  
