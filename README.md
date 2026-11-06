@@ -34,7 +34,7 @@ Replaces the binary array with an array of small integers. Insertions increment 
 | File | Description |
 | :--- | :--- |
 | `main.py` | Python script containing the `BloomFilter` and `CountingBloomFilter` classes, double hashing logic, and all experimental pipelines. |
-| `Technical_Report.pdf` | Detailed 3-5 page report documenting theoretical design, structural choices, and experimental analysis. |
+| `ΑΚΠΔΔ1_ΝΤΟΝΤΟΥ.pdf` | Detailed report documenting theoretical design, structural choices, and experimental analysis. |
 | `README.md` | This file, containing execution instructions and project overview. |
 
 ## 📊 Experimental Results & Observations
@@ -50,11 +50,15 @@ The structures were rigorously tested against multiple scenarios:
 ## 🚀 Getting Started & Execution
 
 **Prerequisites:** 
-Ensure Python 3.6+ is installed on your environment. No external libraries (like NumPy or Pandas) are required; the code relies entirely on standard libraries (`hashlib`, `random`, `time`, `sys`).
+Ensure Python 3.6+ is installed on your environment. To generate the performance visualizations, you must install the required external libraries:
+```bash
+pip install matplotlib numpy
+```
+The rest of the code relies entirely on standard Python libraries (hashlib, random, time, sys).
 
 **Execution:**
 ```bash
-python main.py 
+python ntontouu.py 
 ```
 ## 📝 Author & Academic Use
 
