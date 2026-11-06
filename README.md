@@ -33,9 +33,11 @@ Replaces the binary array with an array of small integers. Insertions increment 
 
 | File | Description |
 | :--- | :--- |
-| `main.py` | Python script containing the `BloomFilter` and `CountingBloomFilter` classes, double hashing logic, and all experimental pipelines. |
+| `ntontouu.py` | Python script containing the `BloomFilter` and `CountingBloomFilter` classes, double hashing logic, and all experimental pipelines. |
 | `ΑΚΠΔΔ1_ΝΤΟΝΤΟΥ.pdf` | Detailed report documenting theoretical design, structural choices, and experimental analysis. |
 | `README.md` | This file, containing execution instructions and project overview. |
+| `README-el.md` | Same as this file but the execution instructions are in Greek :greece:. |
+| `Figure_1.png` | Graphs of a run. |
 
 ## 📊 Experimental Results & Observations
 The structures were rigorously tested against multiple scenarios:
